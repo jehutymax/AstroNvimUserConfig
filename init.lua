@@ -28,6 +28,11 @@ return {
 
   lsp = {
     -- customize lsp formatting options
+    config = {
+      clangd = {
+        capabilities = { offsetEncoding = "utf-8" }
+      },
+    },
     formatting = {
       -- control auto formatting on save
       format_on_save = {
